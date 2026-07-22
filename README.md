@@ -18,7 +18,7 @@ Automated NSE equity gap-down fill trading system using the **Kite Connect** bro
 python -m venv .venv && source .venv/bin/activate
 
 # Install dependencies
-pip install -r backend/requirements.txt
+pip install -r requirements.txt
 
 # Copy env
 cp .env.example .env

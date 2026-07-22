@@ -32,17 +32,18 @@ const COLUMNS: { key: SortKey; label: string; title: string }[] = [
   { key: 'gap_pct', label: 'Gap %', title: 'Gap % = (Open − Prev Close) / Prev Close × 100' },
   { key: 'open_price', label: 'Open', title: 'Opening price' },
   { key: 'ltp', label: 'LTP', title: 'Last traded price' },
-  { key: 'volume', label: 'Volume', title: "Today's traded volume" },
-  { key: 'avg_volume_20d', label: 'Avg Vol 20D', title: '20-day average volume' },
-  { key: 'volume_spike', label: 'Vol Spike', title: 'Volume spike ratio (today rate ÷ avg rate). ≥2x = high activity' },
-  { key: 'preopen_buy_pct', label: 'Buy %', title: 'Pre-open buy qty as % of total depth — higher is more bullish' },
-  { key: 'preopen_sell_pct', label: 'Sell %', title: 'Pre-open sell qty as % of total depth' },
   { key: 'investment_amount', label: 'Amount ₹', title: '₹ amount to invest in this stock' },
   { key: 'buy_limit_price', label: 'Limit Price', title: 'Buy limit price (auto-buffered from open price)' },
   { key: 'use_market_price', label: 'Mkt', title: 'Use market order instead of limit' },
   { key: 'sl_pct_override', label: 'SL %', title: 'Stop-loss % from fill price' },
   { key: 'target_pct_override', label: 'Tgt %', title: 'Target % from fill price' },
   { key: 'quantity', label: 'Qty', title: 'Estimated quantity = floor(Amount ÷ Price)' },
+  { key: 'volume', label: 'Volume', title: "Today's traded volume" },
+  { key: 'avg_volume_20d', label: 'Avg Vol 20D', title: '20-day average volume' },
+  { key: 'volume_spike', label: 'Vol Spike', title: 'Volume spike ratio (today rate ÷ avg rate). ≥2x = high activity' },
+  { key: 'preopen_buy_pct', label: 'Buy %', title: 'Pre-open buy qty as % of total depth — higher is more bullish' },
+  { key: 'preopen_sell_pct', label: 'Sell %', title: 'Pre-open sell qty as % of total depth' },
+
 ]
 
 export default function CandidatesTable({ candidates, settings, onChange }: Props) {
